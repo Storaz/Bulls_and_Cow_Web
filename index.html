@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bulls and Cows</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="favicon" href="images/bulls_and_cows_icon.jpg">
+	<script src="jeu.js" type="text/javascript"></script>
+</head>
+<body onload="start()">
+	<header>
+		<h1>Bulls and Cows : Le jeu !</h1>
+	</header>
+	<article>
+		<section id="principe">
+			<h2>Le principe</h2>
+			<p>Le principe du jeu est de trouver la <strong>bonne réponse.</strong><br/>
+				Si le jeu indique  <strong>Bulls</strong>, cela veut dire qu'il y a <strong>x nombres qui sont les bons chiffres à la bonne place</strong>, à vous de déterminer lesquels sont les bons!<br/>
+				Si le jeu indique  <strong>Cows</strong>, cela veut dire qu'il y a <strong>x nombres qui sont bons mais pas à la bonne place</strong>!<br/>
+			</p>
+		</section>
+		<section id="jeu">
+			<h2>Jouer</h2>
+			<p>Choisir :
+			<select id="choix_1">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+			</select>
+			<select id="choix_2">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+			</select>
+			<select id="choix_3">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+			</select>
+			<select id="choix_4">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+			</select>
+			<p>
+			<button id="comparer" onClick="choix_joueur()">Comparer</button>
+			<button id="recharger" onClick="document.location.reload(); return false;">Recommencer la partie</button>
+			</p>
+		</section>
+		<section id="choix_joueurs">
+			<table id="choix">
+				<thead>
+					<th class="element_1">
+						Choix 1
+					</th>
+					<th>
+						Choix 2
+					</th>
+					<th>
+						Choix 3
+					</th>
+					<th>
+						Choix 4
+					</th>
+					<th>
+						Bull(s)
+					</th>
+					<th>
+						Cow(s)
+					</th>
+				</thead>
+				<tbody>
+				<!--
+					<td>
+						Rien
+						</td>
+						<td>
+						Rien
+						</td>
+						<td>
+							Rien
+						</td>
+						<td>
+							Rien
+					</td>
+					-->
+			</tbody>
+		</table>
+		</section>
+</article>
+</body>
+</html>
